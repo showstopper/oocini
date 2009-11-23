@@ -52,15 +52,14 @@ INI: class {
         return result
     }
 
-    setEntry: func<T> (key: String, val:T) -> Int {
+    setEntry: func<T> (key: String, val: String) -> Int {
         entry: String
-        tmp := val
         match section {
             case null => entry = key
             case      => entry = section + ":" + key
             
         }
-        iniparser_setstring(dict, entry, tmp class toString())
+        iniparser_setstring(dict, entry, val)
     }
         
             
