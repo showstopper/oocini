@@ -1,6 +1,6 @@
 Name: oocini
 Description: Binding to iniparser
-Includes: iniparser.h dictionary.h
+Includes: iniparser.h, dictionary.h
 Libs: -liniparser
 
 
