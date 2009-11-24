@@ -59,7 +59,7 @@ INI: class {
             case      => entry = section + ":" + key
             
         }
-        iniparser_setstring(dict, entry, val)
+        iniparser_set(dict, entry, val)
     }
         
             
